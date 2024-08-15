@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project RevoU | HensCal BMI</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css\style.css" />
     <link rel="icon" href="assets/revou.png" />
   </head>
   <body>
     <!-- Semantic -->
-    <!-- Header/Navbar -->
+    <!-- Header/Navbar Start-->
     <header class="header">
       <h1>HensCal BMI</h1>
       <p>by Febrian Henska</p>
     </header>
-    <!-- Content -->
+    <!-- Header/Navbar End -->
+    <!-- Content Start-->
     <main>
+      <!-- Aside 1 -->
       <aside>
         <article class="description">
           <h2>What is BMI?</h2>
@@ -26,9 +29,10 @@
             weight, underweight, or overweight.
           </p>
         </article>
+        <!-- Form BMI Calculator -->
         <form action="" class="calculator">
           <div class="header-form">
-            <h2>Calculator BMI</h2>
+            <h2>BMI Calculator</h2>
             <p>Please fill out the following form to get your BMI results</p>
           </div>
           <div class="form-gender">
@@ -47,7 +51,7 @@
               type="number"
               class="form-input"
               min="1"
-              placeholder="fill age"
+              placeholder="fill age ..."
               required
             />
           </div>
@@ -61,7 +65,7 @@
               min="0"
               step="0.01"
               class="form-input"
-              placeholder="fill weight"
+              placeholder="fill weight ..."
               required
             />
           </div>
@@ -75,7 +79,7 @@
               min="0"
               step="0.01"
               class="form-input"
-              placeholder="fill height"
+              placeholder="fill height ..."
               required
             />
           </div>
@@ -86,8 +90,9 @@
             <button class="button-reset" id="reset" type="reset">Reset</button>
           </div>
         </form>
+        <!-- Advantages -->
         <article>
-          <header>
+          <header class="header-advantages">
             <h2>BMI Feature Advantages</h2>
           </header>
           <ul class="advantages">
@@ -112,6 +117,7 @@
               consultation with a dietician or doctor.
             </li>
           </ul>
+          <!-- Usefulness -->
           <div class="usefulness">
             <h2>Usefulness of BMI Calculator</h2>
             <p>
@@ -129,8 +135,9 @@
           </div>
         </article>
       </aside>
-
+      <!-- Aside 2 -->
       <aside>
+        <!-- Result -->
         <section class="result">
           <div class="result-bmi">
             <h2>Result</h2>
@@ -141,6 +148,7 @@
               weight and height you have inputted.
             </p>
           </div>
+          <!-- Output -->
           <div class="output">
             <h3>Your BMI</h3>
             <p id="bmi">00.00</p>
@@ -160,11 +168,12 @@
               </div>
               <div style="--color: var(--obese)">
                 <h4>Obesity</h4>
-                <p>>= 30</p>
+                <p>≥ 30</p>
               </div>
             </section>
           </div>
         </section>
+        <!-- Classification -->
         <section>
           <div class="classification">
             <h2>BMI Classification</h2>
@@ -193,7 +202,7 @@
                   overweight can be done by reducing calorie intake, eating
                   healthy foods, and exercising regularly.
                 </p>
-                <li>Obesity (BMI >= 30)</li>
+                <li>Obesity (BMI ≥ 30)</li>
                 <p>
                   Obese is a condition when the BMI is above 30, which increases
                   the serious risk of various diseases such as heart disease,
@@ -209,17 +218,34 @@
             </div>
           </div>
         </section>
+        <!-- Download App -->
+        <section class="download-app">
+          <h2>Download Our App</h2>
+          <div class="app-icon">
+            <a href="https://www.apple.com/id/app-store/"
+              ><img src="assets/appstore.png" alt="" width="50"
+            /></a>
+            <a href="https://play.google.com/store/apps?hl=id"
+              ><img src="assets/playstore.png" alt="" width="50"
+            /></a>
+          </div>
+        </section>
       </aside>
     </main>
-    <!--  Footer -->
+    <!-- Content End -->
+    <!--  Footer Start-->
     <footer>
-      <div>
-        <a href="https://github.com/febrianhenska">febrianhenska</a>
-        <a href="https://github.com/febrianhenska">febrianhenska</a>
+      <div class="">
+        <h3>HensCal BMI</h3>
+      </div>
+      <div class="social-link">
+        <a href="https://github.com/febrianhenska">GitHub</a>
+        <a href="https://linkedin.com/in/febrianhenska">LinkedIn</a>
       </div>
       <h5>Copyright &copy; 2024 HensCal BMI. All Rights Reserved.</h5>
     </footer>
-
+    <!-- Footer End -->
+    <!-- Add JavaScript -->
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,10 +1,12 @@
 /* CSS */
+/* import font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* variables */
 :root {
   --underweight: orange;
   --normal: green;
-  --overweight: lightcoral;
+  --overweight: deeppink;
   --obese: red;
 }
 
@@ -15,6 +17,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* header */
 .header {
   text-align: center;
   margin-top: 50px;
@@ -26,6 +29,7 @@
   font-size: 5rem;
 }
 
+/* Content */
 main {
   display: flex;
 }
@@ -91,7 +95,6 @@ form .button-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   margin-top: 10px;
 }
 
@@ -121,7 +124,7 @@ form .button-form {
   border: 1px solid #000;
   background-color: #fff;
   border: none;
-  color: #000;
+  color: red;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -217,8 +220,95 @@ form .button-form {
   margin-top: 20px;
 }
 
+.download-app {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.download-app h2 {
+  margin-bottom: 20px;
+}
+
+.download-app .app-icon {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Footer */
 footer {
   margin-top: 50px;
-  margin-bottom: 20px;
   text-align: center;
+  background-color: #e7ad3d;
+  padding: 20px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer .social-link {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer .social-link a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .social-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Mobile*/
+@media only screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .description h2 {
+    font-size: 1.75rem;
+  }
+
+  .header-advantages h2 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .usefulness h2 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .usefulness p {
+  }
+
+  .result-bmi h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bmi-scale div h4 {
+    font-size: 0.5rem;
+  }
+
+  .bmi-scale div p {
+    font-size: 10px;
+  }
+
+  .classification {
+    margin-top: 50px;
+  }
+
+  .classification h2 {
+    font-size: 1.5rem;
+  }
 }
